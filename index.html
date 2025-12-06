@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="style.css">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>JS Example</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  #box {
+    border: 2px solid black;
+    margin-top: 10px;
+  }
+</style>
 </head>
 <body>
-    <h1 class="hello" id="hello">Hello World</h1>
-    <button class ="btn btn-danger">submit</button>
 
-    <script src="demo.js"></script>
+<h1 id="title">Hello World</h1>
+
+<p id="text">This text will change</p>
+
+<div id="box">This is a box</div>
+
+<br>
+
+<button onclick="changeStyle()">Change Style (JS)</button>
+
+<button onclick="jqueryChange()">Change with jQuery</button>
+
+<script src="script.js"></script>
+
 </body>
 </html>
